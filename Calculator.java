@@ -21,6 +21,10 @@ public class Calculator {
     public static int mod(int a, int b) {
     return a % b;
     }
+    public static int power(int a, int b) {
+    return (int) Math.pow(a, b);
+}
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
@@ -33,6 +37,8 @@ public class Calculator {
         System.out.println("Multiply: " + multiply(a, b));
         System.out.println("Divide: " + divide(a, b));
         System.out.println("Modulus: " + mod(a, b));
+        System.out.println("Power: " + power(a, b));
+
 
 
         scanner.close();
